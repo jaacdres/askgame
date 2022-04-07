@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Document</title>
+</head>
+<body onload="mostrarPregunta(), mostrarRespuesta()">
+    <div>
+        <h1>Juego De Preguntas</h1>
+    </div>
+    <div>
+        
+        <h2>Nivel:</h2>
+        <h2 id="nivel">1</h2>
+        <h2>Premio nivel actual:</h2>
+        <h2 id="premio">1000</h2>
+        <div>
+            <h3>Acumulado:</h3>
+            <h2 id="acumulado">0</h2>
+        </div>
+    </div>
+    <div class="contenedor-preguntas">
+        <div hidden id="numero_pregunta"></div>
+        <ul id="pregunta">
+        
+        </ul>
+        <div hidden id="respuesta_id"></div>
+        <form name="formulario">
+            <ul id="respuesta">
+
+            </ul>
+        </form>
+        <button onclick="evaluarRespuesta()">Contestar</button>
+        <button onclick="retirarse()">Retirarse</button>
+    </div>
+    
+    
+</body>
+</html>
+
+<script src="js/Pregunta.js"></script>
+<script src="js/Respuesta.js"></script>
+<script src="js/VerificarRespuesta.js"></script>
+<script src="js/juego.js"></script>
